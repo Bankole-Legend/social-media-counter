@@ -51,7 +51,7 @@ You can visit this [Link](https://full-stack-developer-academy.github.io/social-
 
 
 
-## License
+## Licenses
 
 
 
