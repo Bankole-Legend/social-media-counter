@@ -47,7 +47,7 @@ You are provided with the basic HTML and CSS files. You are required to write yo
 
 ## Link
 
-You can visit this [Link](https://gist.github.com/PurpleBooth/b24679402957c63ec426) to see the web app (Note this web app is not functional).
+You can visit this [Link](https://full-stack-developer-academy.github.io/social-media-counter/) to see the web app (Note this web app is not functional).
 
 
 
