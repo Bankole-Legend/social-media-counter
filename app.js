@@ -23,3 +23,73 @@
  * 2. Use Es6 syntax wherever possible.  
  */
 
+
+//All required id were called and assigned to a variable
+ const text = document.querySelector('#text');
+ const count = document.querySelector('#count');
+ const words = document.querySelector('#words');
+ const twitter = document.querySelector('#twitter');
+ const facebook = document.querySelector('#facebook');
+ const instergram = document.querySelector('#instergram');
+ const others = document.querySelector('#others');
+ const countt = 280
+ const countf = 63206
+ const counti = 2200
+ const counto = 8000
+const message = document.querySelector('#message');
+ 
+//Each Social media is picked and assigned a function onclick, the function assigns
+//the word count for each 
+twitter.onclick = function() {
+    words.textContent = `Words:280`
+    count.textContent = `Word count:0`
+//an event listener linked to the textarea to implement the arrow function on input
+ text.addEventListener('input', () =>{
+    const wordsDiff = countt - text.value.length
+    const countAdd = 0 + text.value.length;
+    words.textContent = `Words:${wordsDiff}`
+    count.textContent = `Word count:${countAdd}`
+//Using tenary operators, the user is unable to type any further characters and gets the congratulatory message
+//the same is repeated for other social media
+    wordsDiff <= 0?(text.disabled=true, message.innerHTML=`congratulations`):donothing
+    });
+    }
+
+facebook.onclick = function() {
+    words.textContent = `Words:63206`
+    count.textContent = `Word count:0`
+
+    text.addEventListener('input', () =>{
+    const wordsDiff = countf - text.value.length
+    const countAdd = 0 + text.value.length;
+    words.textContent = `Words:${wordsDiff}`
+    count.textContent = `Word count:${countAdd}`
+    wordsDiff <= 0?(text.disabled=true, message.innerHTML=`congratulations`):donothing
+});
+    }
+
+instergram.onclick = function() {
+    words.textContent = `Words:2200`
+    count.textContent = `Word count:0`
+
+text.addEventListener('input', () =>{
+    const wordsDiff = counti - text.value.length
+    const countAdd = 0 + text.value.length;
+    words.textContent = `Words:${wordsDiff}`
+    count.textContent = `Word count:${countAdd}`
+    wordsDiff <= 0?(text.disabled=true, message.innerHTML=`congratulations`):donothing
+});
+    }
+
+others.onclick = function() {
+    words.textContent = `Words:8000`
+    count.textContent = `Word count:0`
+
+text.addEventListener('input', () =>{
+    const wordsDiff = counto - text.value.length
+    const countAdd = 0 + text.value.length;
+    words.textContent = `Words:${wordsDiff}`
+    count.textContent = `Word count:${countAdd}`
+    wordsDiff <= 0?(text.disabled=true, message.innerHTML=`congratulations`):donothing
+});
+    }

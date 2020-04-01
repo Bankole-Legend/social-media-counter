@@ -34,3 +34,8 @@ h1 {
 .spacer {
     margin-bottom: 50px;
 }
+
+/* Styling the congratulatory message. */
+#message {
+    color: #ff0000;
+}
