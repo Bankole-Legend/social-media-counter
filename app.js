@@ -43,53 +43,60 @@ const message = document.querySelector('#message');
 twitter.onclick = function() {
     words.textContent = `Words:280`
     count.textContent = `Word count:0`
+//To set maximum length for the counter 
+    text.setAttribute("maxlength",countt)  
+
 //an event listener linked to the textarea to implement the arrow function on input
  text.addEventListener('input', () =>{
-    const wordsDiff = countt - text.value.length
+    let wordsDiff = countt - text.value.length
     const countAdd = 0 + text.value.length;
     words.textContent = `Words:${wordsDiff}`
     count.textContent = `Word count:${countAdd}`
 //Using tenary operators, the user is unable to type any further characters and gets the congratulatory message
 //the same is repeated for other social media
-    wordsDiff <= 0?(text.disabled=true, message.innerHTML=`congratulations`):donothing
-    });
-    }
+    // wordsDiff <= 0?(text.disabled=true, message.innerHTML=`congratulations`):donothing
+    wordsDiff <= 0 ?( message.innerHTML=`Congratulations you have reached the maximum input`):donothing
+    });}
+    
 
 facebook.onclick = function() {
     words.textContent = `Words:63206`
     count.textContent = `Word count:0`
+    text.setAttribute("maxlength",countf)
 
     text.addEventListener('input', () =>{
-    const wordsDiff = countf - text.value.length
+    let wordsDiff = countf - text.value.length
     const countAdd = 0 + text.value.length;
-    words.textContent = `Words:${wordsDiff}`
+    words.textContent = `Words:${wordsDiff}`;
     count.textContent = `Word count:${countAdd}`
-    wordsDiff <= 0?(text.disabled=true, message.innerHTML=`congratulations`):donothing
-});
-    }
+    wordsDiff <= 0 ?(message.innerHTML=`Congratulations you have reached the maximum input`):donothing
+});}
+    
 
 instergram.onclick = function() {
     words.textContent = `Words:2200`
     count.textContent = `Word count:0`
+    text.setAttribute("maxlength",counti)
 
 text.addEventListener('input', () =>{
-    const wordsDiff = counti - text.value.length
+    let wordsDiff = counti - text.value.length
     const countAdd = 0 + text.value.length;
     words.textContent = `Words:${wordsDiff}`
     count.textContent = `Word count:${countAdd}`
-    wordsDiff <= 0?(text.disabled=true, message.innerHTML=`congratulations`):donothing
-});
-    }
+    wordsDiff <= 0 ?(message.innerHTML=`Congratulations you have reached the maximum input`):donothing
+});}
+    
 
 others.onclick = function() {
     words.textContent = `Words:8000`
     count.textContent = `Word count:0`
+    text.setAttribute("maxlength",counto)
 
 text.addEventListener('input', () =>{
-    const wordsDiff = counto - text.value.length
+    let wordsDiff = counto - text.value.length
     const countAdd = 0 + text.value.length;
     words.textContent = `Words:${wordsDiff}`
     count.textContent = `Word count:${countAdd}`
-    wordsDiff <= 0?(text.disabled=true, message.innerHTML=`congratulations`):donothing
-});
-    }
+    wordsDiff <= 0 ?( message.innerHTML=`Congratulations you have reached the maximum input`):donothing
+})}
+    
